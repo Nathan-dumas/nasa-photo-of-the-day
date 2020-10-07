@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import "./App.css"
 import axios from 'axios'
-import Card from './components/Card'
+import Copyright from './components/Copyright'
 import Description from './components/Description'
+import Image from './components/Image'
+import Date from './components/Date'
+import Title from './components/Title'
+
 function App() {
   
   const [nasa, setNasa] = useState([])
@@ -24,8 +28,11 @@ function App() {
 
   return (
     <div>
-      <Card hdurl={nasa.hdurl} copyright={nasa.copyright} date={nasa.date} title={nasa.title} />
-      <Description explanation={nasa.explanation}/>
+      <Title title={nasa.title} />
+      <Date date={nasa.date} />
+      <Image hdurl={nasa.hdurl} />
+      <Copyright copyright={nasa.copyright} />
+      <Description explanation={nasa.explanation} />
     </div>
   )
 }
