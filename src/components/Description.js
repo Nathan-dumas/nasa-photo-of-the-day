@@ -10,7 +10,7 @@ const StyledParagraph = styled.p`
     margin: 1% auto;
     background: #fdf5e6;
     box-shadow: 5px 10px 16px 5px rgba(0,0,0,0.67);
-    text-shadow: ${pr => pr.theme.shadow};
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     padding: 1%;
     border-radius: 25px;
     `

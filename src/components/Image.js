@@ -5,9 +5,9 @@ const StyledImg = styled.img`
     width: 35%;
     display: flex;
     margin: 0 auto;
-    box-shadow: 5px 10px 16px 5px rgba(0,0,0,0.67);
+    box-shadow: 5px 10px 16px 5px rgba(0,0,0,0.5);
     border-radius: 25px;
-    border: 3px solid ${pr => pr.theme.primary}
+    border: 3px solid white;
 `
 
 export default function Image(props) {

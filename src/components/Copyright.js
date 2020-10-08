@@ -9,7 +9,7 @@ const Styledh2 = styled.h2`
     width: 90%;
     margin: 1% auto;
     justify-content: center;
-    text-shadow: ${pr => pr.theme.shadow};
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 `
 
 

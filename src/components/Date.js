@@ -9,7 +9,7 @@ const Styledh3 = styled.h3`
     font-size: 1.6rem;
     color: ${pr => pr.theme.secondary};
     font-weight: bolder;
-    text-shadow: ${pr => pr.theme.shadow};
+    text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
 `
 
 export default function Card(props) {

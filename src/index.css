@@ -56,7 +56,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 62.5%;
-  background-color: #0B3D91;
+  background-image: url('./assets/milky-way-starry-sky-night-sky-star-957061.webp');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
 }
 
 code {
