@@ -6,6 +6,11 @@ import Description from './components/Description'
 import Image from './components/Image'
 import Date from './components/Date'
 import Title from './components/Title'
+import styled from 'styled-components'
+
+const StyledDiv = styled.div`
+  background-color: '#191b1d';
+`
 
 function App() {
   
@@ -13,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = () => {
-      axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+      axios.get('https://api.nasa.gov/planetary/apod?api_key=2bHhvmdDhzTVho3u286vvl6AWx6e041Zh8OAuo7M')
       .then(res => {
         setNasa(res.data)
       })
@@ -27,13 +32,13 @@ function App() {
 
 
   return (
-    <div>
+    <StyledDiv>
       <Title title={nasa.title} />
-      <Date date={nasa.date} />
       <Image hdurl={nasa.hdurl} />
+      <Date date={nasa.date} />
       <Copyright copyright={nasa.copyright} />
       <Description explanation={nasa.explanation} />
-    </div>
+    </StyledDiv>
   )
 }
 

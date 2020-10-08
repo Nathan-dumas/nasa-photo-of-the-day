@@ -1,7 +1,17 @@
 import React from 'react'
+import styled, { keyframes } from 'styled-components'
+
+const StyledImg = styled.img`
+    width: 35%;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: 5px 10px 16px 5px rgba(0,0,0,0.67);
+    border-radius: 25px;
+    border: 3px solid ${pr => pr.theme.primary}
+`
 
 export default function Image(props) {
     return (
-        <img src={props.hdurl} alt="NASA potd" width="50%" />
+        <StyledImg src={props.hdurl} alt="NASA potd" />
     )
 }
